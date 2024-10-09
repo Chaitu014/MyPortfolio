@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgb(255, 255, 255);
+}
+
+/* navbar style */
+.nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  5px 50px;
+    position: fixed;
+    background-color: rgb(251, 244, 236);
+}
+
+.nav-h1{
+    cursor: pointer;
+}
+
+.nav-h1 span{
+    color: rgb(196, 130, 16);
+
+}
+
+.nav-options a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left:40px ;
+    font-weight: 700;
+}
+
+.nav-options a:hover{
+    color: black;
+    border-bottom: 4px solid rgb(196, 130, 16);
+}
+
+.nav-options .n1{
+    color: rgb(196, 130, 16);
+}
+
+.nav-options .home:hover{
+    color: black;
+    border-bottom: 4px solid rgb(196, 130, 16);
+}
+
+
+.nav-btn button{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(182, 128, 57);
+    color:white;
+    border-radius:10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-btn button:hover{
+    background-color: #ff8674;
+    color: white;
+}
+
+/* hero */
+
+.hero{
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+
+.hero-left{
+    height: 500px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.hero-left-1{
+    padding-left: 50px;
+    padding-top: 200px;
+}
+
+.hero-left-para{
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+
+.hero-left-h1{
+    font-size: 25px;
+    color:rgb(182, 128, 57);
+    padding-bottom: 5px;
+}
+
+.hero-left-btn{
+    padding-top: 10px;
+}
+
+.hero-left-btn button{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(177, 146, 106);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.hero-left-btn button:hover{
+    transform: scale(1.05);
+}
+
+.hero-left-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero-right{
+    height: 500px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.hero-right-profi{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+/* about */
+
+.about{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    margin-top: 260px;
+}
+
+.about-left{
+    height:500px;
+    width: 35%;
+}
+
+.about-left-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.about-l-box{
+    height: 400px;
+    width: 350px;
+    border-radius:20px;
+    background-color:rgb(226, 190, 119);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.about-right{
+    height: 500px;
+    width: 50%;
+}
+
+.about-right-h1{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: rgb(177, 146, 106);
+}
+
+.about-right-para{
+    font-size: 20px;
+}
+
+.about-right-SkillsandEducation{
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.about-right-skills{
+    color: black;
+    cursor: pointer;
+}
+
+.about-right-skills:hover{
+    color: rgb(196, 130, 16);
+    border-bottom:4px solid black ;
+}
+
+.about-right-education{
+    color: black;
+    cursor: pointer;
+}
+
+.about-right-education:hover{
+    color: rgb(196, 130, 16);
+    border-bottom:4px solid black ;
+}
+
+.about-right-list-1{
+    padding-top: 20px;
+}
+
+.about-right-list-1 ul li{
+    padding-top: 20px;
+}
+
+.about-right-list-1 p{
+    padding-top: 5px;
+}
+
+.about-right-list-1 {
+    display: none;
+}
+
+.about-right-list-2{
+    padding-top: 20px;
+}
+
+.about-right-list-2 ul li{
+    padding-top: 20px;
+}
+
+.about-right-list-2 p{
+    padding-top: 5px;
+}
+
+/* services */
+
+.services{
+    height: 400px;
+    width: 100%;
+    margin-top: 230px;
+}
+
+.services-h1{
+    font-size: 30px;
+    margin-left: 580px;
+    margin-bottom: 20px;
+    color: rgb(177, 146, 106);
+    cursor: pointer;
+}
+
+.services-box{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.services-box-1{
+    height: 300px;
+    width: 250px;
+    background-color:  rgb(251, 244, 236);
+    color: rgb(196, 130, 16);
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.services-box-1:hover {
+    transform: translateY(-5px);
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.services-box-1 .images{
+    font-size: 50px;
+    padding-top: 20px;
+    padding-left: 50px;
+   
+}
+
+.services-box-1 h2{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.services-box-1 p{
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.services-box-1 .learn{
+    font-size: 20px;
+    padding-top: 24px;
+    padding-left: 20px;
+}
+
+.services-box-2{
+    height: 300px;
+    width: 250px;
+    background-color:  rgb(251, 244, 236);
+    color: rgb(196, 130, 16);
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-box-2:hover {
+    transform: translateY(-5px);
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.services-box-2 .images{
+    font-size: 50px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.services-box-2 h2{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.services-box-2 p{
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.services-box-2 .learn{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+.services-box-3{
+    height: 300px;
+    width: 250px;
+    background-color:  rgb(251, 244, 236);
+    color: rgb(196, 130, 16);
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-box-3:hover {
+    transform: translateY(-5px);
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.services-box-3 i{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.services-box-3 h2{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.services-box-3 p{
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.services-box-3 .learn{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/* project */
+
+.project{
+    height: 400px;
+    width: 100%;
+    margin-top: 250px;
+
+}
+
+.project-h1{
+    font-size: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: rgb(177, 146, 106);
+    cursor: pointer;
+}
+
+.project-box{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.project-box-1{
+    height: 400px;
+    width: 300px;
+    background-color: blueviolet;
+    background-image: url("/image/1.png");
+    background-size: cover;
+    border: 40px solid rgb(194, 185, 174);
+    transition: all 0.5s 0.5s ease-in;
+}
+
+.project-box-1:hover{
+    border: 40px solid rgb(196, 130, 16);
+    scale: 1.1;
+}
+
+.project-box-2{
+    height: 400px;
+    width: 300px;
+    background-color: blueviolet;
+    background-image: url("/image/2.png");
+    background-size: cover;
+    border: 40px solid rgb(194, 185, 174);
+    transition: all 0.5s 0.5s ease-in;
+}
+
+.project-box-2:hover{
+    border: 40px solid rgb(196, 130, 16);
+    scale: 1.1;
+}
+
+.project-box-3{
+    height: 400px;
+    width: 300px;
+    background-color: blueviolet;
+    background-image: url("/image/2.png");
+    background-size: cover;
+    border: 40px solid rgb(194, 185, 174);
+    transition: all 0.5s 0.5s ease-in;
+}
+
+.project-box-3:hover{
+    border: 40px solid rgb(196, 130, 16);
+    scale: 1.1;
+}
+
+/* contact */
+
+.contact{
+    height: 400px;
+    width: 100%;
+    margin-top: 260px;
+    text-align: center;
+    margin-bottom: 200px;
+
+}
+.contact-info {
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-info h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: rgb(177, 146, 106);
+    animation :slideInFromTop 1s ease-out;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.detail {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail h3 {
+    font-size: 1.8em;
+    margin: 0 0 5px;
+    color: rgb(177, 146, 106)
+}
+
+.detail p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.detail a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.detail a:hover {
+    color: #f39c12;
+}
+
+.map {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.map h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: rgb(177, 146, 106)
+}
+
+.map img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.map img:hover {
+    transform: scale(1.05);
+}
+
+.map p a {
+    color: rgb(177, 146, 106);
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.map p a:hover {
+    color: #f39c12;
+}
+
+.contact-form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+    padding-bottom: 60px;
+}
+
+.contact-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(177, 146, 106);
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f39c12;
+    outline: none;
+}
+
+.contact-form button {
+    background: rgb(177, 146, 106);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: rgb(177, 146, 106);
+    transform: scale(1.05);
+}
+
+/* footer */
+
+footer {
+    background: rgb(251, 244, 236);
+    color: rgb(182, 128, 57);
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+     <div class="container">
+    <div class="nav">
+        <div class="nav-h1">
+            <h1><span>PORT</span>FOLIO</h1>
+        </div>
+        <div class="nav-options">
+            <a href="/html/index.html" class="n1">Home</a>
+            <a href="#" class="n1">About</a>
+            <a href="#" class="n1">Service</a>
+            <a href="#" class="n1">Project</a>
+        </div>
+        <div class="nav-btn">
+            <button>Contact Me</button>
+        </div>
+    </div>
+
+    <!-- hero -->
+     <div class="hero">
+        <div class="hero-left">
+            <div class="hero-left-1">
+            <div class="hero-left-para">
+                <p>I'm Chaitanya</p>
+            </div>
+            <div class="hero-left-h1">
+                <h1>FRONTEND DEVELOPER</h1>
+            </div>
+            <div class="hero-left-para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate.</p>
+            </div>
+            <div class="hero-left-btn">
+                <button><a href="">DOWNLOAD RESUME</a></button>
+            </div>
+        </div>    
+        </div>
+        <div class="hero-right">
+            <div class="hero-right-1">
+                <div class="hero-right-img">
+                    <img src="/image/profile-pic.png" alt="" height="600px" class="hero-right-profi">
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- about me -->
+      <div class="about">
+        <div class="about-left">
+            <div class="about-left-1">
+                <div class="about-l-box">
+                    <img src="/image/Aboutmee.png" alt="" height="350px" class="about-l-img">
+                </div>
+            </div>    
+        </div>
+        <div class="about-right">
+            <div class="about-right-h1">
+                <h1>About Me</h1>
+            </div>
+            <div class="about-right-para">
+                <p>I'm is a full stack developer skilled in both frontend and backend technologies. Proficient in HTML, CSS, JavaScript, and modern frameworks, they focus on building visually appealing, responsive websites while ensuring seamless user experiences. With a solid understanding of server-side technologies and databases, they can develop complete, scalable web applications. I'm is always eager to explore new tools, frameworks, and best practices, aiming to contribute valuable knowledge to the development community.</p>
+            </div>
+            <div class="about-right-SkillsandEducation">
+                <div class="about-right-skills">
+                    <h2>SKILLS</h2>
+                </div>
+                <div class="about-right-education">
+                    <h2>EDUCATION</h2>
+                </div>
+            </div>
+            <div class="about-right-list">
+            <div class="about-right-list-1">
+                <ul>
+                    <li><h3>Programming Language</h3></li>
+                    <p>Java , Python</p>
+                    <li><h3>Web Development</h3></li>
+                    <p>HTML , CSS , JS</p>
+                    <li><h3>Database</h3></li>
+                    <p>MYSQL</p>
+                </ul>
+            </div>
+
+            <div class="about-right-list-2">
+                <ul>
+                    <li><h3>2020-2021</h3></li>
+                    <p>XII CLASS</p>
+                    <li><h3>2022-2024</h3></li>
+                    <p>BCA/BACHELOR OF COMPUTER APPLICATION</p>
+                </ul>
+            </div>
+        </div>    
+        </div>
+      </div>
+
+      <!-- services -->
+       <div class="services">
+        <div class="services-h1">
+            <h1>My Service</h1>
+        </div>
+        <div class="services-box">
+            <div class="services-box-1">
+                <img src="/image/icon-design.svg" alt="" class="images">
+                <h2>Web Design</h2>
+                <p>A cutting-edge, high-quality web design crafted at a professional level, featuring sleek, modern aesthetics, clean lines, and a user-friendly interface.</p>
+                <p class="learn">Learn More</p>
+            </div>
+            <div class="services-box-2">
+                <img src="/image/icon-dev.svg" alt="" class="images">
+                <h2>Web development</h2>
+                <p>Expert-level website development that delivers high-quality performance, with a focus on professional coding standards, seamless functionality, and optimized user experience.</p>
+                <p class="learn">Learn More</p>
+            </div>
+            <div class="services-box-3">
+                <i class="fa-solid fa-heart"></i>
+                <h2>Web Designer</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur natus id ipsum aliquam est.</p>
+                <p class="learn">Learn More</p>
+            </div>
+        </div>
+       </div>
+
+       <!-- project -->
+        <div class="project">
+            <div class="project-h1">
+                <h1>My Work</h1>
+            </div>
+            <div class="project-box">
+                <div class="project-box-1">
+            
+                </div>
+                <div class="project-box-2"></div>
+                <div class="project-box-3"></div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+         <div class="contact">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out.</p>
+                
+                <div class="contact-details">
+                    <div class="detail">
+                        <h3>Address</h3>
+                        <p>Rajaram Bapu Blood Bank Near , Islampur</p>
+                    </div>
+                    <div class="detail">
+                        <h3>Phone</h3>
+                        <p>+91 1234567890</p>
+                    </div>
+                    <div class="detail">
+                        <h3>Email</h3>
+                        <p><a href="Chaitanyapatil@gmail.com">Chaitanyapatil@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+         </div>
+
+       </div>
+
+         <!-- footer -->
+         <footer>
+            <p>&copy; 2024 Chaitanya Patil</p>
+        </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
+make a different website like this
